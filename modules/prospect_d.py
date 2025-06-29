@@ -12,9 +12,6 @@ def prospect_d(N, Cab, Car, Cw, Cm, wl, nr, Kab, Kcar, Kw, Km):
     # 透射率计算（精确近似）
     t1 = (1 - Kall) * np.exp(-Kall)
     t2 = Kall**2 * exp1(Kall)
-    plt.figure()
-    plt.plot(wl,Kall)
-    plt.figure()
     tau = t1 + t2
 
     # 表面光学
